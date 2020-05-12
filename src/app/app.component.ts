@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router, RouteConfigLoadStart, RouteConfigLoadEnd, RouterEvent } from '@angular/router';
+import { Storage } from './storage';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,7 @@ import { Router, RouteConfigLoadStart, RouteConfigLoadEnd, RouterEvent } from '@
 export class AppComponent {
   loading: boolean;
 
-  constructor(router: Router) {
+  constructor(router: Router, private storage: Storage) {
     this.loading = false;
 
     router.events.subscribe(
