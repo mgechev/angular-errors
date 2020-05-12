@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/angular-errors",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -49,6 +50,10 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
                 }
               ]
             }
@@ -114,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-errors"
+    }
+  },
+  "defaultProject": "angular-errors",
+  "cli": {
+    "analytics": "960d9928-e71c-4a0f-841d-2f14bf07f662"
+  }
 }

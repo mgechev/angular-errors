@@ -1,5 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
 html, body {
   height: 100%;
   background-color: #1C4A88;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: #d4b3ff;
 }
