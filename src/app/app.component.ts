@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { Router, RouteConfigLoadStart, RouteConfigLoadEnd, RouterEvent } from '@angular/router';
 
 @Component({
@@ -6,7 +6,7 @@ import { Router, RouteConfigLoadStart, RouteConfigLoadEnd, RouterEvent } from '@
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
   loading: boolean;
 
   constructor(router: Router) {
@@ -21,5 +21,9 @@ export class AppComponent {
         }
       }
     );
+  }
+
+  ngAfterViewInit() {
+    this.loading = true;
   }
 }
