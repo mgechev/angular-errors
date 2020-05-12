@@ -6,9 +6,10 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { DrawerComponent } from './drawer.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent, DrawerComponent],
   imports: [
     BrowserModule,
     MatSidenavModule,
