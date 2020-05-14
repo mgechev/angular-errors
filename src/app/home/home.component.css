@@ -20,3 +20,19 @@ a {
   display: block;
   margin: auto;
 }
+
+form {
+  margin-top: -200px;
+}
+
+label {
+  margin-bottom: 0px;
+  display: block;
+  font-size: 20px;
+}
+
+label input {
+  border: 1px solid #fff;
+  outline: none;
+  font-size: 20px;
+}
