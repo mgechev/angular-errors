@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MatSidenavModule } from '@angular/material/sidenav';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 
@@ -11,7 +10,6 @@ import { HomeComponent } from './home/home.component';
   declarations: [AppComponent, HomeComponent],
   imports: [
     BrowserModule,
-    MatSidenavModule,
     BrowserAnimationsModule,
     RouterModule.forRoot([
       {
