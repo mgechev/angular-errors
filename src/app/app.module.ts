@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent],
@@ -13,6 +14,7 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     MatSidenavModule,
     BrowserAnimationsModule,
+    HomeModule,
     RouterModule.forRoot([
       {
         path: '',
